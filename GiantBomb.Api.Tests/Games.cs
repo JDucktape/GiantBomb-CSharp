@@ -25,7 +25,7 @@ namespace GiantBomb.Api.Tests {
             Assert.IsNotNull(game.Releases);
             Assert.IsNotNull(game.Image);
             Assert.IsNotNull(game.Images);
-            Assert.IsNotNull(game.Developers);
+            Assert.IsNotNull(game.People);
             Assert.IsNotNull(game.Publishers);
             Assert.IsNotNull(game.Genres);
             Assert.IsNotNull(game.SimilarGames);

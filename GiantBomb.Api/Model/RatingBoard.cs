@@ -3,23 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace GiantBomb.Api.Model {
-    public class Platform {
-
-        public string Abbreviation { get; set; }
+namespace GiantBomb.Api.Model
+{
+    public class RatingBoard
+    {
         public string ApiDetailUrl { get; set; }
-        public Company Company { get; set; }
         public DateTime DateAdded { get; set; }
         public DateTime DateLastUpdated { get; set; }
         public string Deck { get; set; }
         public string Description { get; set; }
         public int Id { get; set; }
         public Image Image { get; set; }
-        public int InstallBase { get; set; }
         public string Name { get; set; }
-        public bool OnlineSupport { get; set; } // TODO: Maybe set to nullable bool? Check data on GiantBomb
-        public int OriginalPrice { get; set; } // TODO: Maybe change to double/float? Check data on GiantBomb
-        public DateTime? ReleaseDate { get; set; }
+        public Region Region { get; set; }
         public string SiteDetailUrl { get; set; }
     }
 }

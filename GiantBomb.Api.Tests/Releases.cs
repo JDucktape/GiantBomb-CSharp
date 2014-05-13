@@ -22,7 +22,7 @@ namespace GiantBomb.Api.Tests {
             Assert.IsTrue(release.DateLastUpdated > DateTime.MinValue);
             Assert.IsNotNull(release.Platform, "No platform");
             Assert.IsNotNull(release.Publishers, "No publishers");
-            Assert.IsNotNull(release.Developers, "No developers");
+            Assert.IsNotNull(release.Developers, "No people");
         }
 
         [Test]
