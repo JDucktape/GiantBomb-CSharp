@@ -19,7 +19,7 @@ namespace GiantBomb.Api.Model
         public DateTime PublishDate { get; set; }
         public string SiteDetailUrl { get; set; }
         public string Url { get; set; }
-        public Person User { get; set; } // TODO: Determine if this is a string or a Person
-        public string YoutubeId { get; set; } // TODO: Determine if this is a string or an int
+        public Person User { get; set; } 
+        public string YoutubeId { get; set; }
     }
 }

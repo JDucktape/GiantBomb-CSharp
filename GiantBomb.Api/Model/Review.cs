@@ -15,7 +15,7 @@ namespace GiantBomb.Api.Model
         public List<Platform> Platforms { get; set; }
         public DateTime PublishDate { get; set; }
         public Release Release { get; set; }
-        public Person Reviewer { get; set; } // TODO: Determine if this is a string or a Person
+        public string Reviewer { get; set; }
         public int Score { get; set; }
         public string SiteDetailUrl { get; set; }
     }

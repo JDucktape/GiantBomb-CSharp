@@ -4,7 +4,7 @@
         public const int Accessories = 3000;
         public const int Characters = 3005;
         public const int Chats = 2450;
-        public const int Companies = 3010; // Is also Publishers
+        public const int Companies = 3010; // Is also used for Publishers and Developers
         public const int Concepts = 3015;
         public const int Franchises = 3025;
         public const int Games = 3030;

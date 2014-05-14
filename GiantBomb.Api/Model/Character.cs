@@ -23,9 +23,9 @@ namespace GiantBomb.Api.Model
         public List<Character> Friends { get; set; }
         public List<Game> Games { get; set; }
         /// <summary>
-        /// Available options are: Male, Female, Other
+        /// Available options are: Male (1), Female (2) or Other (3)
         /// </summary>
-        public string Gender { get; set; } // TODO: Maybe create enum for Gender choice?
+        public int Gender { get; set; } // TODO: Maybe create enum for Gender choice? Data is 1 (Male), 2 (Female) or 3 (Other)
         public int Id { get; set; }
         public Image Image { get; set; }
         public string LastName { get; set; }

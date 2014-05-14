@@ -22,15 +22,15 @@ namespace GiantBomb.Api.Model {
         public List<Release> DistributorReleases { get; set; }
         public int Id { get; set; }
         public Image Image { get; set; }
-        public string Locationaddress { get; set; } // TODO: Field is listed twice on API field list. Verify data on GiantBomb to see if this is just a cut-n-paste error.
-        public string LocationCity { get; set; } // TODO: Field is listed twice on API field list. Verify data on GiantBomb to see if this is just a cut-n-paste error.
-        public string LocationCountry { get; set; } // TODO: Field is listed twice on API field list. Verify data on GiantBomb to see if this is just a cut-n-paste error.
+        public string Locationaddress { get; set; } 
+        public string LocationCity { get; set; } 
+        public string LocationCountry { get; set; } 
         public string LocationState { get; set; }
         public List<Location> Locations { get; set; }
         public string Name { get; set; }
         public List<Object> Objects { get; set; }
         public List<Person> People { get; set; }
-        public string Phone { get; set; } // TODO: Verify data on GiantBomb to see if this is string or int
+        public string Phone { get; set; }
         public List<Game> PublishedGames { get; set; }
         public List<Release> PublisherReleases { get; set; }
         public string SiteDetailUrl { get; set; }

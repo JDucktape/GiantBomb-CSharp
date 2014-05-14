@@ -10,13 +10,13 @@ namespace GiantBomb.Api.Model {
         public DateTime DateLastUpdated { get; set; }
         public string Deck { get; set; }
         public string Description { get; set; }
-        public List<Person> Developers { get; set; } // TODO: Check data to see if developers contains Person og Company details
+        public List<Company> Developers { get; set; }
         public int? ExpectedReleaseDay { get; set; }
         public int? ExpectedReleaseMonth { get; set; }
         public int? ExpectedReleaseQuarter { get; set; }
         public int? ExpectedReleaseYear { get; set; }
         public Game Game { get; set; }
-        public int GameRating { get; set; } // TODO: Check data to see if this is an int
+        public GameRating GameRating { get; set; }
         public int Id { get; set; }
         public Image Image { get; set; }
         public List<Image> Images { get; set; }

@@ -17,8 +17,8 @@ namespace GiantBomb.Api.Model {
         public Image Image { get; set; }
         public int InstallBase { get; set; }
         public string Name { get; set; }
-        public bool OnlineSupport { get; set; } // TODO: Maybe set to nullable bool? Check data on GiantBomb
-        public int OriginalPrice { get; set; } // TODO: Maybe change to double/float? Check data on GiantBomb
+        public bool? OnlineSupport { get; set; } 
+        public double OriginalPrice { get; set; } 
         public DateTime? ReleaseDate { get; set; }
         public string SiteDetailUrl { get; set; }
     }

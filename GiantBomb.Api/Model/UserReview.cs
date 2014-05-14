@@ -13,7 +13,7 @@ namespace GiantBomb.Api.Model
         public string Deck { get; set; }
         public string Description { get; set; }
         public Game Game { get; set; }
-        public Person Reviewer { get; set; } // TODO: Determine if this is a string or a Person
+        public Person Reviewer { get; set; } 
         public int Score { get; set; }
         public string SiteDetailUrl { get; set; }
     }
