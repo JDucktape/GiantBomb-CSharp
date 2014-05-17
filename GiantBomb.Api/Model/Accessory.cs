@@ -8,7 +8,7 @@ namespace GiantBomb.Api.Model
     {
         public string ApiDetailUrl { get; set; }
         public DateTime DateAdded { get; set; }
-        public DateTime DateLastUpdates { get; set; }
+        public DateTime DateLastUpdated { get; set; }
         public string Deck { get; set; }
         public string Description { get; set; }
         public int Id { get; set; }

@@ -63,12 +63,11 @@ namespace GiantBomb.Api.Tests {
         }
 
         /// <summary>
-        /// BUGFIX: "mario" returns dup resultset
+        /// BUGFIX: "mario" returns dup resultset.
         /// </summary>
         [Test]
         public void search_resource_should_not_return_duplicates_for_mario() {
             var result = _client.SearchForAllGames("mario", limitFields: new[] { "id" }).ToList();
-
             Assert.IsNotNull(result);
             Assert.IsFalse(result.Any(r => result.Count(r2 => r2.Id == r.Id) > 1), "Results contain duplicate IDs");
         }
