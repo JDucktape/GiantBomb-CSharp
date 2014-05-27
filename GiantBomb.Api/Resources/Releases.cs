@@ -25,5 +25,14 @@ namespace GiantBomb.Api {
         {
             return GetReleasesForGame(game.Id, limitFields);
         }
+
+        public IEnumerable<Release> GetReleases(int page = 1, int pageSize = GiantBombBase.DefaultLimit, string[] limitFields = null) // TODO: Add testcase for releases
+        {
+            var liteGames = GetListResource<Release>("releases", page, pageSize, limitFields);
+
+            if (liteGames == null) return null;
+
+            return liteGames;
+        }
     }
 }

@@ -31,7 +31,7 @@ namespace GiantBomb.Api.Tests
         }
 
         [Test]
-        public void accessories_resource_should_return_list_of_platforms()
+        public void accessories_resource_should_return_list_of_accessories()
         {
 
             var accessories = _client.GetAccessories(pageSize: 2);

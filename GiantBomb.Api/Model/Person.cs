@@ -9,7 +9,7 @@ namespace GiantBomb.Api.Model {
         /// </summary>
         public string Aliases { get; set; }
         public string ApiDetailUrl { get; set; }
-        public DateTime BirthDate { get; set; }
+        public string BirthDate { get; set; }
         public List<Character> Characters { get; set; }
         public List<Concept> Concepts { get; set; }
         public string Country { get; set; }
@@ -21,7 +21,7 @@ namespace GiantBomb.Api.Model {
         public Game FirstCreditedGame { get; set; }
         public List<Franchise> Franchises { get; set; }
         public List<Game> Games { get; set; }
-        public string Gender { get; set; } // TODO: Maybe create enum for Gender choice?
+        public int? Gender { get; set; } // TODO: Maybe create enum for Gender choice?
         public string Hometown { get; set; }
         public int Id { get; set; }
         public Image Image { get; set; }

@@ -14,7 +14,7 @@ namespace GiantBomb.Api.Model
         public Image Image { get; set; }
         public string Link { get; set; } 
         public string Name { get; set; }
-        public ResourceTypes ResourceType { get; set; }
+        public string ResourceType { get; set; }
         public string User { get; set; }
     }
 }

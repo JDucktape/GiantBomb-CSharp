@@ -9,12 +9,12 @@ namespace GiantBomb.Api
 {
     public partial class GiantBombRestClient
     {
-        public Chat GetChat(int id, string[] limitFields = null)
+        public Chat GetChat(int id, string[] limitFields = null) // TODO: No Id in Chat class. Use ChannelName or Title instead? No chat data in DB to compare to. Maybe just drop it?
         {
             return GetSingleResource<Chat>("chat", ResourceTypes.Chats, id, limitFields);
         }
 
-        public IEnumerable<Chat> GetChats(int page = 1, int pageSize = GiantBombBase.DefaultLimit, string[] limitFields = null)
+        public IEnumerable<Chat> GetChats(int page = 1, int pageSize = GiantBombBase.DefaultLimit, string[] limitFields = null) 
         {
             var liteGames = GetListResource<Chat>("chats", page, pageSize, limitFields);
 

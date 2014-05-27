@@ -9,7 +9,7 @@ namespace GiantBomb.Api
 {
     public partial class GiantBombRestClient
     {
-        public Review GetReview(int id, string[] limitFields = null)
+        public Review GetReview(int id, string[] limitFields = null) // TODO: No Id in Review class (GB apparently forgot to add it, as it has an ID in ApiDetailUrl). Seems to be linked to Game and/or Release instead.
         {
             return GetSingleResource<Review>("review", ResourceTypes.Reviews, id, limitFields);
         }
