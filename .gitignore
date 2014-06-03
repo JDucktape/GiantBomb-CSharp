@@ -52,3 +52,4 @@ packages/
 *.vs10x
 *.docstates
 *.nupkg
+*.stackdump
